@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0a0f0d;
+  --bg-card: #111814;
+  --border: #1f2b26;
+  --accent: #3ECF8E;
+  --text: #e5e7eb;
+  --text-muted: #9ca3af;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+.cursor-blink {
+  animation: blink 1s step-start infinite;
+}
