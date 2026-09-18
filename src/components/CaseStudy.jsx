@@ -20,26 +20,33 @@ function CaseStudy({ project, onClose }) {
           </button>
         </div>
 
-               {/* Screenshots */}
-        <div className="mb-4">
-          <h3 className="text-[var(--accent)] text-sm mb-2">SCREENSHOTS</h3>
-          <div className="grid grid-cols-2 gap-3">
-            <div className="h-32 bg-[var(--bg)] border border-[var(--border)] rounded flex items-center justify-center text-[var(--text-muted)] text-xs">
-              [ screenshot 1 ]
-            </div>
-            <div className="h-32 bg-[var(--bg)] border border-[var(--border)] rounded flex items-center justify-center text-[var(--text-muted)] text-xs">
-              [ screenshot 2 ]
+        {/* Screenshots */}
+        {study.screenshots && study.screenshots.length > 0 && (
+          <div className="mb-4">
+            <h3 className="text-[var(--accent)] text-sm mb-2">SCREENSHOTS</h3>
+            <div className="grid grid-cols-2 gap-3">
+              {study.screenshots.map((src) => (
+                <img key={src} src={src} className="h-32 w-full object-cover rounded" />
+              ))}
             </div>
           </div>
-        </div>
+        )}
 
         {/* Demo video */}
-        <div className="mb-6">
-          <h3 className="text-[var(--accent)] text-sm mb-2">DEMO</h3>
-          <div className="h-48 bg-[var(--bg)] border border-[var(--border)] rounded flex items-center justify-center text-[var(--text-muted)] text-sm">
-            [ 30–60s demo video ]
+        {study.video && (
+          <div className="mb-6">
+            <h3 className="text-[var(--accent)] text-sm mb-2">DEMO</h3>
+            <div className="aspect-video rounded overflow-hidden">
+              <iframe
+                className="w-full h-full"
+                src={study.video}
+                title={`${project.title} demo`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
-        </div>
+        )}
 
         {study.overview && (
           <div className="mb-6">
@@ -84,15 +91,17 @@ function CaseStudy({ project, onClose }) {
           ))}
         </div>
 
-        <div className="mb-6">
-          <h3 className="text-[var(--accent)] text-sm mb-2">CHALLENGES & SOLUTIONS</h3>
-          {study.challenges.map((item) => (
-            <div key={item.challenge} className="mb-3">
-              <p className="text-[var(--text)] font-medium text-sm">Challenge: {item.challenge}</p>
-              <p className="text-[var(--text-muted)] text-sm">Solution: {item.solution}</p>
-            </div>
-          ))}
-        </div>
+        {study.challenges && study.challenges.length > 0 && (
+          <div className="mb-6">
+            <h3 className="text-[var(--accent)] text-sm mb-2">CHALLENGES & SOLUTIONS</h3>
+            {study.challenges.map((item) => (
+              <div key={item.challenge} className="mb-3">
+                <p className="text-[var(--text)] font-medium text-sm">Challenge: {item.challenge}</p>
+                <p className="text-[var(--text-muted)] text-sm">Solution: {item.solution}</p>
+              </div>
+            ))}
+          </div>
+        )}
 
         <div>
           <h3 className="text-[var(--accent)] text-sm mb-2">WHAT I LEARNED</h3>

@@ -7,9 +7,11 @@ function About() {
       </h2>
 
       <div className="flex flex-col md:flex-row gap-8">
-        <div className="w-full md:w-64 h-64 bg-[var(--bg-card)] border border-[var(--border)] rounded flex items-center justify-center text-[var(--text-muted)] shrink-0">
-          [ your photo ]
-        </div>
+        <img
+          src="/images/11.jpg"
+          alt="Ayodele Ayomidotun"
+          className="w-full md:w-64 h-64 object-cover rounded shrink-0"
+        />
 
         <div className="flex-1">
           <p className="text-[var(--text-muted)] mb-6 max-w-xl">
@@ -24,7 +26,7 @@ function About() {
           <div className="flex flex-wrap gap-4">
             <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded px-4 py-3">
               <p className="text-xs text-[var(--text-muted)]">EMAIL</p>
-              <p className="text-[var(--text)]">hello@ayodele.dev</p>
+              <p className="text-[var(--text)]">ayodeleayomidotun@gmail.com</p>
             </div>
             <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded px-4 py-3">
               <p className="text-xs text-[var(--text-muted)]">LOCATION</p>

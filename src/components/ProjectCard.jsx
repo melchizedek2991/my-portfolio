@@ -1,9 +1,11 @@
 function ProjectCard({ project, onOpenCaseStudy }) {
   return (
     <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded overflow-hidden flex flex-col">
-      <div className="h-48 bg-[var(--bg)] flex items-center justify-center text-[var(--text-muted)] text-sm">
-        [ {project.title} screenshot ]
-      </div>
+      <img
+        src={project.image}
+        alt={`${project.title} screenshot`}
+        className="w-full h-48 object-cover"
+      />
 
       <div className="p-5 flex flex-col flex-1">
         <div className="flex items-center justify-between mb-2">

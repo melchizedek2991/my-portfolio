@@ -46,7 +46,7 @@ function Hero() {
             <a href="#projects" className="bg-[var(--text)] text-[var(--bg)] px-4 py-2 rounded font-medium">
               View projects
             </a>
-            <a href="/cv.pdf" className="border border-[var(--accent)] text-[var(--accent)] px-4 py-2 rounded font-medium">
+            <a href="/myCV.pdf" className="border border-[var(--accent)] text-[var(--accent)] px-4 py-2 rounded font-medium">
               Download CV
             </a>
           </div>
@@ -68,7 +68,7 @@ function Hero() {
 
         <div className="flex-1">
           <img
-            src="/images/2.jpg"
+            src="/images/8.jpg"
             alt="Ayodele Ayomidotun"
             className="w-full max-w-md h-full max-h-[420px] object-cover rounded"
           />
