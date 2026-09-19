@@ -20,9 +20,20 @@ function CaseStudy({ project, onClose }) {
           </button>
         </div>
 
-        {study.screenshots.map((src) => (
-          <img key={src} src={`${import.meta.env.BASE_URL}${src}`} className="h-32 w-full object-cover rounded" />
-        ))}
+          {study.screenshots && study.screenshots.length > 0 && (
+          <div className="mb-4">
+            <h3 className="text-[var(--accent)] text-sm mb-2">SCREENSHOTS</h3>
+            <div className="grid grid-cols-2 gap-3">
+              {study.screenshots.map((src) => (
+                <img
+                  key={src}
+                  src={`${import.meta.env.BASE_URL}${src}`}
+                  className="h-32 w-full object-cover rounded"
+                />
+              ))}
+            </div>
+          </div>
+        )}
         {/* Demo video */}
         {study.video && (
           <div className="mb-6">

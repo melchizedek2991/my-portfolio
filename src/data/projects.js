@@ -76,7 +76,7 @@ const projects = [
     github: "",
     liveDemo: "",
         caseStudy: {
-      screenshots: ["/images/12.png"],
+      screenshots: ["/images/7.png", "/images/12.png"],
       video: "https://www.youtube.com/embed/TSIY-mWGi7s",
       overview:
         "RawTech CBT is a mobile-first JAMB practice platform designed to help Nigerian students practice past questions in a realistic Computer-Based Test environment. It's also being built as a full-stack learning project covering React, TypeScript, REST APIs, Node.js, Express, and application state management.",
