@@ -10,7 +10,7 @@ function About() {
         <img
         src={`${import.meta.env.BASE_URL}images/11.jpg`}
           alt="Ayodele Ayomidotun"
-          className="w-full md:w-64 h-64 object-cover rounded shrink-0"
+          className="w-full md:w-64 h-64 object-cover object-top rounded shrink-0"
         />
 
         <div className="flex-1">
