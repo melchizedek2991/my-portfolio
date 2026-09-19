@@ -74,7 +74,7 @@ const projects = [
     technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express"],
     image: "/images/7.png",
     github: "",
-    liveDemo: "",
+    liveDemo: "https://rawestate-crm.vercel.app",
         caseStudy: {
       screenshots: ["/images/7.png", "/images/12.png"],
       video: "https://www.youtube.com/embed/TSIY-mWGi7s",
