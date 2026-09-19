@@ -43,10 +43,10 @@ function Hero() {
           </p>
 
           <div className="flex gap-4 mb-8">
-            <a href={`${import.meta.env.BASE_URL}cv.pdf`} download className="border border-[var(--accent)] text-[var(--accent)] px-4 py-2 rounded font-medium">
-              Download CV
+            <a href="#projects" className="bg-[var(--text)] text-[var(--bg)] px-4 py-2 rounded font-medium">
+              View projects
             </a>
-            <a href={`${import.meta.env.BASE_URL}cv.pdf`}  className="border border-[var(--accent)] text-[var(--accent)] px-4 py-2 rounded font-medium">
+            <a href={`${import.meta.env.BASE_URL}cv.pdf`} download className="border border-[var(--accent)] text-[var(--accent)] px-4 py-2 rounded font-medium">
               Download CV
             </a>
           </div>
