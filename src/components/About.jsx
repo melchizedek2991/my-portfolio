@@ -8,7 +8,7 @@ function About() {
 
       <div className="flex flex-col md:flex-row gap-8">
         <img
-          src="/images/11.jpg"
+        src={`${import.meta.env.BASE_URL}11.png`}
           alt="Ayodele Ayomidotun"
           className="w-full md:w-64 h-64 object-cover rounded shrink-0"
         />

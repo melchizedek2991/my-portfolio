@@ -2,7 +2,7 @@ function ProjectCard({ project, onOpenCaseStudy }) {
   return (
     <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded overflow-hidden flex flex-col">
       <img
-        src={project.image}
+        src={`${import.meta.env.BASE_URL}${project.image}`}
         alt={`${project.title} screenshot`}
         className="w-full h-48 object-cover"
       />

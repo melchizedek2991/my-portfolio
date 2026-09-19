@@ -9,7 +9,7 @@ const projects = [
     github: "",
     liveDemo: "",
     caseStudy: {
-      screenshots: ["/images/13.png", "/images/14.png"],
+      screenshots: ["/images/13.png", "/images/14.png"], 
       video: "https://www.youtube.com/embed/ipfTAqwHFcM",
       overview:
         "RawEstate CRM is a real estate management application built to help agents and agencies organize properties, leads, clients, agents, and follow-up tasks in one place, with a dashboard and reports section.",
