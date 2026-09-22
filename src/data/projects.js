@@ -7,7 +7,7 @@ const projects = [
     technologies: ["React", "Tailwind CSS", "Recharts"],
     image: "/images/13.png",
     github: "",
-    liveDemo: "",
+    liveDemo: "https://rawtech-cbt.vercel.app",
     caseStudy: {
       screenshots: ["/images/13.png", "/images/14.png"], 
       video: "https://www.youtube.com/embed/ipfTAqwHFcM",
