@@ -46,7 +46,7 @@ function Hero() {
             <a href="#projects" className="bg-[var(--text)] text-[var(--bg)] px-4 py-2 rounded font-medium">
               View projects
             </a>
-            <a href={`${import.meta.env.BASE_URL}cv.pdf`} download className="border border-[var(--accent)] text-[var(--accent)] px-4 py-2 rounded font-medium">
+            <a href={`${import.meta.env.BASE_URL}Ayodele_Ayomidotun_CV.pdf`} download className="border border-[var(--accent)] text-[var(--accent)] px-4 py-2 rounded font-medium">
               Download CV
             </a>
           </div>
